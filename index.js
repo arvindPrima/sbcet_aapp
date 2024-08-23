@@ -29,5 +29,5 @@ app.use("/", usersRoute);
 app.use("/", productsRoute);
 app.use("/", commonRoute);
 app.listen(3006, () => {
-  console.log("App is running on port 3006");
+  console.log("App is running on port 3006.");
 });
