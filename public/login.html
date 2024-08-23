@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <style>
+      .container {
+        display: flex;
+        justify-content: center;
+      }
+      .form-container {
+        padding: 20px;
+        border: solid;
+        border-radius: 10px;
+        margin-top: 100px;
+        position: relative;
+      }
+      .logo img {
+        width: 50px;
+        position: absolute;
+        top: -20px;
+        left: 0;
+        right: 0;
+        margin-left: auto;
+        margin-right: auto;
+        border: solid;
+        border-radius: 50%;
+        height: 40px;
+      }
+      .title {
+        text-align: center;
+        margin-top: 20px;
+      }
+      .form-element {
+        padding-top: 10px;
+      }
+
+      .action {
+        display: flex;
+        justify-content: space-between;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="form-container">
+        <div class="logo">
+          <img src="/img/logol.jpg" />
+        </div>
+        <div class="title">LOGIN</div>
+        <form class="" action="/login" method="post">
+          <div class="form-element">
+            <div class="label"><label> Username: </label></div>
+            <div class="input"><input type="text" name="username" /></div>
+          </div>
+          <div class="form-element">
+            <div class="label"><label> Password: </label></div>
+            <div class="input"><input type="text" name="password" /></div>
+          </div>
+          <div class="form-element" style="text-align: right">
+            <a style="text-decoration: none" href="/forget"
+              >Forget/reset password</a
+            >
+          </div>
+          <div class="form-element action">
+            <button>Signup</button>
+            <button type="submit">Login</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <table border="1">
+      <tr>
+        <th>ID</th>
+        <th>username</th>
+        <th>password</th>
+        <th>created_id</th>
+        <th>email</th>
+      </tr>
+      <% if(users){ users.map(function(u){ %>
+      <tr>
+        <td><%= u.id; %></td>
+        <td><%= u.username; %></td>
+        <td><%= u.password; %></td>
+        <td><%= u.created_id; %></td>
+        <td><%= u.email; %></td>
+      </tr>
+      <% }) } %>
+    </table>
+  </body>
+</html>

@@ -1,0 +1,55 @@
+<header class="row text-bg-primary">
+  <div class="logo col-2">
+    <img src="img/logo.png" />
+  </div>
+  <div class="search-bar col-8">
+    <form
+      class=""
+      name="frm-searrch"
+      onsubmit="callAjaxReq(); return false"
+      style="width: 400px"
+    >
+      <div class="input-group">
+        <input
+          type="search"
+          name="search"
+          placeholder="search here"
+          class="form-control"
+          aria-describedby="basic-addon2"
+          id="inpt-search"
+          autocomplete="off"
+        />
+        <div class="input-group-append">
+          <button
+            class="btn btn-warning"
+            onclick="callAjaxReq()"
+            type="button"
+            id="btn-search"
+          >
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+        </div>
+      </div>
+      <div class="autocomplete" style="display: none">
+        <ul>
+          <li>Cloths</li>
+          <li>Electronics</li>
+          <li>Toys</li>
+        </ul>
+      </div>
+    </form>
+  </div>
+  <div class="main-nav col-2">
+    <a class="btn btn-success mx-1" style="position: relative" href="/cart"
+      ><i class="fa-solid fa-cart-shopping"></i
+      ><span
+        class="badge badge-light"
+        id="badge-cart"
+        style="position: absolute; background: red; top: -8px"
+        >0</span
+      ></a
+    >
+    <a class="btn btn-success mx-1" href="login">Login</a>
+    <a class="btn btn-danger mx-1" href="signup">Signup</a>
+  </div>
+</header>
